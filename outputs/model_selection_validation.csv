@@ -1,0 +1,39 @@
+stage,model,config,metric,value
+fac,HistGradientBoosting,"{'learning_rate': 0.05, 'max_iter': 200, 'max_leaf_nodes': 8}",log_loss,1.3281
+fac,HistGradientBoosting,"{'learning_rate': 0.05, 'max_iter': 200, 'max_leaf_nodes': 24}",log_loss,1.3209
+fac,HistGradientBoosting,"{'learning_rate': 0.1, 'max_iter': 100, 'max_leaf_nodes': 8}",log_loss,1.3376
+fac,HistGradientBoosting,"{'learning_rate': 0.1, 'max_iter': 100, 'max_leaf_nodes': 24}",log_loss,1.3555
+fac,HGB (chosen),,accuracy,0.5402
+fac,Logistic regression,C=0.5,accuracy,0.565
+fac,baseline: global_most_popular,,accuracy,0.3043
+fac,baseline: resident_mode,,accuracy,0.5334
+fac,baseline: repeat_last,,accuracy,0.5019
+day,HistGradientBoosting,"{'learning_rate': 0.05, 'max_iter': 200, 'max_leaf_nodes': 8}",log_loss,1.4681
+day,HistGradientBoosting,"{'learning_rate': 0.05, 'max_iter': 200, 'max_leaf_nodes': 24}",log_loss,1.4818
+day,HistGradientBoosting,"{'learning_rate': 0.1, 'max_iter': 100, 'max_leaf_nodes': 8}",log_loss,1.4749
+day,HistGradientBoosting,"{'learning_rate': 0.1, 'max_iter': 100, 'max_leaf_nodes': 24}",log_loss,1.4844
+day,HGB (chosen),,accuracy,0.4838
+day,Logistic regression,C=0.5,accuracy,0.4831
+day,baseline: resident_mode,,accuracy,0.4861
+day,baseline: repeat_last,,accuracy,0.3809
+hour,HistGradientBoosting,"{'learning_rate': 0.05, 'max_iter': 200, 'max_leaf_nodes': 8}",log_loss,1.1272
+hour,HistGradientBoosting,"{'learning_rate': 0.05, 'max_iter': 200, 'max_leaf_nodes': 24}",log_loss,1.1619
+hour,HistGradientBoosting,"{'learning_rate': 0.1, 'max_iter': 100, 'max_leaf_nodes': 8}",log_loss,1.1375
+hour,HistGradientBoosting,"{'learning_rate': 0.1, 'max_iter': 100, 'max_leaf_nodes': 24}",log_loss,1.1654
+hour,HGB (chosen),,accuracy,0.6536
+hour,Logistic regression,C=0.5,accuracy,0.6461
+hour,baseline: resident_mode,,accuracy,0.6484
+hour,baseline: repeat_last,,accuracy,0.5049
+lead,HistGradientBoosting,"{'learning_rate': 0.05, 'max_iter': 200, 'max_leaf_nodes': 8}",log_loss,0.8506
+lead,HistGradientBoosting,"{'learning_rate': 0.05, 'max_iter': 200, 'max_leaf_nodes': 24}",log_loss,0.8729
+lead,HistGradientBoosting,"{'learning_rate': 0.1, 'max_iter': 100, 'max_leaf_nodes': 8}",log_loss,0.8549
+lead,HistGradientBoosting,"{'learning_rate': 0.1, 'max_iter': 100, 'max_leaf_nodes': 24}",log_loss,0.8766
+lead,HGB (chosen),,accuracy,0.7551
+lead,Logistic regression,C=0.5,accuracy,0.7476
+tod,HistGradientBoosting,"{'learning_rate': 0.05, 'max_iter': 200, 'max_leaf_nodes': 8}",MAE_min,64.6756
+tod,HistGradientBoosting,"{'learning_rate': 0.05, 'max_iter': 200, 'max_leaf_nodes': 24}",MAE_min,63.8361
+tod,HistGradientBoosting,"{'learning_rate': 0.1, 'max_iter': 100, 'max_leaf_nodes': 8}",MAE_min,64.6445
+tod,HistGradientBoosting,"{'learning_rate': 0.1, 'max_iter': 100, 'max_leaf_nodes': 24}",MAE_min,63.6899
+tod,HGB (chosen),,MAE_min,63.69
+tod,resident mean booking time (baseline),,MAE_min,77.37
+tod,community mean booking time (baseline),,MAE_min,233.82

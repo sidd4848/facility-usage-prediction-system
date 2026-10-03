@@ -1,0 +1,122 @@
+{
+  "model": {
+    "n_test_records": 2280,
+    "facility": {
+      "accuracy": 0.5618,
+      "macro_f1": 0.5309,
+      "top3_accuracy": 0.8583
+    },
+    "usage_day": {
+      "accuracy": 0.3768,
+      "within_1_day": 0.589,
+      "weekend_vs_weekday_accuracy": 0.6689
+    },
+    "usage_hour": {
+      "accuracy": 0.3816,
+      "within_1_hour": 0.5759,
+      "mae_hours": 3.6855
+    },
+    "nudge_time": {
+      "accuracy": 0.2474,
+      "booking_weekday_accuracy": 0.2987,
+      "lead_days_accuracy": 0.5522,
+      "time_of_day_mae_min": 63.2947,
+      "time_of_day_median_abs_err_min": 22.0,
+      "time_of_day_within_60min": 0.8189
+    },
+    "overall": {
+      "mean_outputs_correct_of_4": 1.5675,
+      "overall_accuracy_pct": 39.1886,
+      "all_4_correct": 0.1281,
+      "at_least_3_correct": 0.2636,
+      "at_least_2_correct": 0.4513,
+      "score_distribution": {
+        "0": 628,
+        "1": 623,
+        "2": 428,
+        "3": 309,
+        "4": 292
+      }
+    }
+  },
+  "baselines": {
+    "Baseline: repeat last booking": {
+      "n_test_records": 2280,
+      "facility": {
+        "accuracy": 0.5083,
+        "macro_f1": 0.4702
+      },
+      "usage_day": {
+        "accuracy": 0.2719,
+        "within_1_day": 0.5105,
+        "weekend_vs_weekday_accuracy": 0.5996
+      },
+      "usage_hour": {
+        "accuracy": 0.286,
+        "within_1_hour": 0.5031,
+        "mae_hours": 4.1952
+      },
+      "nudge_time": {
+        "accuracy": 0.1702,
+        "booking_weekday_accuracy": 0.2237,
+        "lead_days_accuracy": 0.4412,
+        "time_of_day_mae_min": 95.8917,
+        "time_of_day_median_abs_err_min": 31.0,
+        "time_of_day_within_60min": 0.7167
+      },
+      "overall": {
+        "mean_outputs_correct_of_4": 1.2364,
+        "overall_accuracy_pct": 30.9101,
+        "all_4_correct": 0.0618,
+        "at_least_3_correct": 0.1732,
+        "at_least_2_correct": 0.3399,
+        "score_distribution": {
+          "0": 772,
+          "1": 733,
+          "2": 380,
+          "3": 254,
+          "4": 141
+        }
+      }
+    },
+    "Baseline: resident most-frequent": {
+      "n_test_records": 2280,
+      "facility": {
+        "accuracy": 0.5162,
+        "macro_f1": 0.4705
+      },
+      "usage_day": {
+        "accuracy": 0.3329,
+        "within_1_day": 0.5596,
+        "weekend_vs_weekday_accuracy": 0.6557
+      },
+      "usage_hour": {
+        "accuracy": 0.3623,
+        "within_1_hour": 0.5561,
+        "mae_hours": 3.8535
+      },
+      "nudge_time": {
+        "accuracy": 0.1987,
+        "booking_weekday_accuracy": 0.2947,
+        "lead_days_accuracy": 0.5263,
+        "time_of_day_mae_min": 88.3561,
+        "time_of_day_median_abs_err_min": 40.0,
+        "time_of_day_within_60min": 0.6671
+      },
+      "overall": {
+        "mean_outputs_correct_of_4": 1.4101,
+        "overall_accuracy_pct": 35.2522,
+        "all_4_correct": 0.1009,
+        "at_least_3_correct": 0.2364,
+        "at_least_2_correct": 0.4083,
+        "score_distribution": {
+          "0": 765,
+          "1": 584,
+          "2": 392,
+          "3": 309,
+          "4": 230
+        }
+      }
+    }
+  }
+}
